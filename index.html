@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<title>Xe ghép Hà Nội - Hạ Long | Đón tận nơi - Giá từ 450K</title>
+<meta name="description" content="Xe ghép Hà Nội - Hạ Long, đón tận nơi, giá từ 450K/ghế. Bao xe 5 chỗ 1.1tr, 7 chỗ 1.2tr. Xe đời mới, chạy cao tốc. Hotline 035.514.6637."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --navy: #0B2C4D;
+  --navy-deep: #061A2E;
+  --blue: #1473C9;
+  --red: #E2231A;
+  --red-deep: #B91C14;
+  --gold: #F2A93C;
+  --bg: #F7F8FA;
+  --ink: #14253A;
+  --ink-soft: #5C6B7C;
+  --line: #E4E8EC;
+  --white: #FFFFFF;
+  --font: 'Be Vietnam Pro', sans-serif;
+}
+* , *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font); line-height: 1.6; overflow-x: hidden; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+/* ===== TOP STRIP ===== */
+.topstrip {
+  background: var(--navy-deep);
+  color: rgba(255,255,255,0.85);
+  font-size: 0.8rem;
+  padding: 7px 20px;
+  text-align: center;
+}
+.topstrip strong { color: var(--gold); }
+
+/* ===== HEADER ===== */
+header {
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo-mark {
+  width: 44px; height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--blue), var(--navy));
+  display: flex; align-items: center; justify-content: center;
+  color: var(--white); font-weight: 800; font-size: 1.15rem;
+}
+.logo-text { line-height: 1.2; }
+.logo-text .name { font-weight: 800; font-size: 1.05rem; color: var(--navy); }
+.logo-text .tag { font-size: 0.68rem; color: var(--ink-soft); letter-spacing: 0.04em; }
+.nav-links { display: flex; gap: 26px; font-size: 0.9rem; font-weight: 600; color: var(--ink); }
+.nav-links a:hover { color: var(--blue); }
+.header-call {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--red); color: var(--white);
+  padding: 11px 20px; border-radius: 8px;
+  font-weight: 700; font-size: 0.95rem;
+  box-shadow: 0 4px 14px rgba(226,35,26,0.3);
+}
+.header-call svg { width: 18px; height: 18px; animation: ring 2.2s ease-in-out infinite; }
+@keyframes ring {
+  0%, 100% { transform: rotate(0); } 5% { transform: rotate(-15deg); }
+  10% { transform: rotate(12deg); } 15% { transform: rotate(-8deg); } 20% { transform: rotate(0); }
+}
+@media (max-width: 880px) { .nav-links { display: none; } }
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, #103D63 100%);
+  padding: 56px 24px 64px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 700px 350px at 50% -10%, rgba(255,255,255,0.08) 0%, transparent 60%);
+}
+.hero-content { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; }
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25);
+  color: var(--white); font-size: 0.78rem; font-weight: 600;
+  padding: 7px 16px; border-radius: 20px; margin-bottom: 18px;
+}
+.hero-eyebrow .dot { width: 7px; height: 7px; border-radius: 50%; background: #5CE0A0; box-shadow: 0 0 8px #5CE0A0; }
+.hero h1 {
+  font-size: clamp(1.7rem, 4.2vw, 2.7rem);
+  font-weight: 800; color: var(--white);
+  line-height: 1.3; margin-bottom: 14px;
+}
+.hero h1 span { color: var(--gold); }
+.hero p { font-size: 1.02rem; color: rgba(255,255,255,0.78); margin-bottom: 28px; }
+.hero-cta-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.hero-tags {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 760px;
+  margin: 0 auto 30px;
+}
+.hero-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 12px;
+  padding: 14px 12px;
+  text-align: left;
+}
+.hero-tag-icon { font-size: 1.4rem; flex-shrink: 0; }
+.hero-tag strong { display: block; color: var(--white); font-size: 0.82rem; font-weight: 700; }
+.hero-tag small { display: block; color: rgba(255,255,255,0.65); font-size: 0.72rem; margin-top: 2px; }
+.hero-hotline { margin-top: 18px; color: rgba(255,255,255,0.8); font-size: 0.95rem; }
+.hero-hotline strong { color: var(--gold); font-size: 1.05rem; }
+@media (max-width: 700px) { .hero-tags { grid-template-columns: repeat(2, 1fr); } }
+.btn-red {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--red); color: var(--white);
+  padding: 15px 30px; border-radius: 9px;
+  font-weight: 700; font-size: 1rem;
+  box-shadow: 0 8px 22px rgba(226,35,26,0.4);
+  transition: transform 0.2s ease;
+}
+.btn-red:hover { transform: translateY(-2px); background: var(--red-deep); }
+.btn-outline-white {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(255,255,255,0.1); border: 1.5px solid rgba(255,255,255,0.4);
+  color: var(--white); padding: 15px 26px; border-radius: 9px;
+  font-weight: 600; font-size: 1rem;
+}
+
+/* ===== SECTION GENERIC ===== */
+.section { padding: 64px 24px; max-width: 1180px; margin: 0 auto; }
+.section-head { text-align: center; margin-bottom: 38px; }
+.section-head h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 800; color: var(--navy); margin-bottom: 10px; }
+.section-head p { color: var(--ink-soft); font-size: 0.96rem; max-width: 560px; margin: 0 auto; }
+
+/* ===== ROUTE CARDS ===== */
+.routes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.route-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.route-card:hover { transform: translateY(-5px); box-shadow: 0 16px 36px rgba(11,44,77,0.12); }
+.route-card-img {
+  aspect-ratio: 16/10;
+  background: linear-gradient(135deg, #BFE0F5, #7FC0E8);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.4rem; position: relative;
+}
+.route-card-img .price-tag {
+  position: absolute; top: 12px; right: 12px;
+  background: var(--red); color: var(--white);
+  font-weight: 800; font-size: 0.95rem;
+  padding: 6px 14px; border-radius: 8px;
+}
+.route-card-body { padding: 20px 22px 22px; }
+.route-card-name { font-size: 1.15rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
+.route-card-prices { margin-bottom: 14px; }
+.route-card-prices div { font-size: 0.86rem; color: var(--ink-soft); margin-bottom: 3px; }
+.route-card-prices strong { color: var(--red); font-weight: 700; }
+.route-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+.route-tag {
+  display: flex; align-items: center; gap: 5px;
+  font-size: 0.74rem; font-weight: 600; color: var(--blue);
+  background: #EAF4FC; padding: 5px 11px; border-radius: 14px;
+}
+.route-card-btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; background: var(--navy); color: var(--white);
+  padding: 13px; border-radius: 9px; font-weight: 700; font-size: 0.92rem;
+  transition: background 0.2s ease;
+}
+.route-card-btn:hover { background: var(--blue); }
+
+/* ===== WHY TRUST ===== */
+.why-section { background: var(--white); padding: 64px 24px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; max-width: 1100px; margin: 0 auto; }
+.why-card { text-align: center; padding: 22px 16px; }
+.why-icon {
+  width: 60px; height: 60px; margin: 0 auto 16px;
+  background: #EAF4FC; border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.7rem; color: var(--blue);
+}
+.why-card h4 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 7px; }
+.why-card p { font-size: 0.84rem; color: var(--ink-soft); line-height: 1.6; }
+@media (max-width: 880px) { .why-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ===== BOOKING FORM ===== */
+.booking-section { background: var(--bg); padding: 64px 24px; }
+.booking-card {
+  background: var(--white); border-radius: 18px;
+  padding: 30px; max-width: 620px; margin: 0 auto;
+  box-shadow: 0 16px 44px rgba(11,44,77,0.1);
+  border: 1px solid var(--line);
+}
+.booking-card h3 { font-size: 1.3rem; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+.booking-card .sub { font-size: 0.88rem; color: var(--ink-soft); margin-bottom: 22px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group.full { grid-column: 1 / -1; }
+.form-group label { font-size: 0.75rem; font-weight: 700; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.02em; }
+.form-group select, .form-group input {
+  border: 1.5px solid var(--line); border-radius: 9px;
+  padding: 12px 14px; font-family: var(--font); font-size: 0.92rem;
+  color: var(--ink); background: var(--bg); width: 100%;
+}
+.form-group select:focus, .form-group input:focus { outline: none; border-color: var(--blue); background: var(--white); }
+.submit-btn {
+  width: 100%; background: var(--red); color: var(--white); border: none;
+  padding: 16px; border-radius: 10px; font-family: var(--font);
+  font-weight: 700; font-size: 1rem; cursor: pointer; margin-top: 8px;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  box-shadow: 0 6px 18px rgba(226,35,26,0.3);
+}
+.submit-btn:hover { background: var(--red-deep); }
+.form-note { font-size: 0.74rem; color: var(--ink-soft); text-align: center; margin-top: 12px; }
+
+/* ===== TESTIMONIALS ===== */
+.testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.testi-card { background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+.testi-stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 10px; letter-spacing: 2px; }
+.testi-text { font-size: 0.87rem; color: var(--ink); line-height: 1.65; margin-bottom: 14px; }
+.testi-author { display: flex; align-items: center; gap: 10px; }
+.testi-avatar { width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 700; font-size: 0.85rem; }
+.testi-avatar.a1 { background: linear-gradient(135deg, #4FA8E8, var(--blue)); }
+.testi-avatar.a2 { background: linear-gradient(135deg, var(--gold), #D08418); }
+.testi-avatar.a3 { background: linear-gradient(135deg, var(--red), var(--red-deep)); }
+.testi-name { font-size: 0.85rem; font-weight: 700; color: var(--navy); }
+.testi-loc { font-size: 0.74rem; color: var(--ink-soft); }
+
+/* ===== FINAL CTA ===== */
+.final-cta { background: linear-gradient(135deg, var(--red), var(--red-deep)); padding: 56px 24px; text-align: center; }
+.final-cta h2 { font-size: clamp(1.5rem, 3.2vw, 2.1rem); font-weight: 800; color: var(--white); margin-bottom: 12px; }
+.final-cta p { color: rgba(255,255,255,0.9); margin-bottom: 26px; }
+.btn-white { display: inline-flex; align-items: center; gap: 10px; background: var(--white); color: var(--red); padding: 16px 32px; border-radius: 10px; font-weight: 800; font-size: 1.1rem; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+
+/* ===== FOOTER ===== */
+footer { background: var(--navy-deep); color: rgba(255,255,255,0.65); padding: 36px 24px 22px; text-align: center; font-size: 0.8rem; }
+.footer-brand { font-weight: 800; font-size: 1.1rem; color: var(--white); margin-bottom: 10px; }
+.footer-contact { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.84rem; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 16px; font-size: 0.74rem; opacity: 0.6; }
+
+/* ===== FLOATING CALL ===== */
+.float-call { position: fixed; bottom: 20px; right: 20px; z-index: 300; }
+.float-call a {
+  width: 58px; height: 58px; border-radius: 50%;
+  background: var(--red); color: var(--white);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 24px rgba(226,35,26,0.45);
+  animation: float-pulse 2s ease-in-out infinite;
+}
+@keyframes float-pulse { 0%,100%{box-shadow:0 8px 24px rgba(226,35,26,0.45);} 50%{box-shadow:0 8px 24px rgba(226,35,26,0.7),0 0 0 8px rgba(226,35,26,0.12);} }
+.float-call svg { width: 26px; height: 26px; }
+
+.float-call-bar { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 300; background: var(--navy); padding: 12px 16px; }
+.float-call-bar a {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  background: var(--red); color: var(--white); padding: 14px;
+  border-radius: 10px; font-weight: 700; font-size: 1rem;
+}
+
+@media (max-width: 880px) {
+  .routes-grid, .why-grid, .testi-grid { grid-template-columns: 1fr; }
+  .float-call { display: none; }
+  .float-call-bar { display: block; }
+  body { padding-bottom: 70px; }
+}
+@media (max-width: 540px) {
+  .form-row { grid-template-columns: 1fr; }
+  header { padding: 12px 16px; }
+  .section { padding: 48px 18px; }
+}
+
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.55s ease, transform 0.55s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- TOP STRIP -->
+<div class="topstrip">🕓 Hỗ trợ <strong>24/7</strong> · Khởi hành mỗi giờ 04:00 – 22:00</div>
+
+<!-- HEADER -->
+<header>
+  <a class="logo" href="#">
+    <div class="logo-mark">HC</div>
+    <div class="logo-text">
+      <div class="name">HaLong Connect</div>
+      <div class="tag">XE GHÉP · BAO XE</div>
+    </div>
+  </a>
+  <nav class="nav-links">
+    <a href="#routes">Tuyến xe</a>
+    <a href="#why">Vì sao chọn chúng tôi</a>
+    <a href="#booking">Đặt vé</a>
+  </nav>
+  <a href="tel:0355146637" class="header-call">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    035.514.6637
+  </a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Dịch Vụ Xe Ghép Liên Tỉnh Uy Tín<br/>– <span>HaLong Connect</span></h1>
+    <p>HaLong Connect chuyên cung cấp dịch vụ xe ghép Hà Nội – Hạ Long, đón tận nơi, chạy cao tốc, cam kết đúng giờ – không nhồi khách.</p>
+    <div class="hero-tags">
+      <div class="hero-tag"><span class="hero-tag-icon">📍</span><div><strong>Đón trả tận nơi</strong><small>Không trung chuyển</small></div></div>
+      <div class="hero-tag"><span class="hero-tag-icon">🛣️</span><div><strong>Chạy cao tốc</strong><small>Tiết kiệm thời gian</small></div></div>
+      <div class="hero-tag"><span class="hero-tag-icon">🚐</span><div><strong>Xe sạch</strong><small>Không nhồi khách</small></div></div>
+      <div class="hero-tag"><span class="hero-tag-icon">🕓</span><div><strong>Hỗ trợ 24/7</strong><small>Đặt xe nhanh chóng</small></div></div>
+    </div>
+    <div class="hero-cta-row">
+      <a href="tel:0355146637" class="btn-red">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        ĐẶT XE NGAY
+      </a>
+    </div>
+    <div class="hero-hotline">Hotline/Zalo: <strong>035.514.6637</strong></div>
+  </div>
+</section>
+
+<!-- ROUTE CARDS -->
+<section class="section" id="routes">
+  <div class="section-head reveal">
+    <h2>Các Tuyến Xe Ghép Phổ Biến</h2>
+    <p>Lựa chọn nhanh tuyến xe được khách đặt nhiều nhất, giá hợp lý, xe sạch đẹp, đón trả tận nơi.</p>
+  </div>
+  <div class="routes-grid">
+
+    <div class="route-card reveal">
+      <div class="route-card-img">🎫<span class="price-tag">450K</span></div>
+      <div class="route-card-body">
+        <div class="route-card-name">Hà Nội ⇌ Hạ Long (Vé ghép)</div>
+        <div class="route-card-prices">
+          <div>Giá từ <strong>450K / ghế</strong></div>
+          <div>Bao xe từ <strong>1.100K</strong></div>
+        </div>
+        <div class="route-tags">
+          <span class="route-tag">✧ Phù hợp du lịch</span>
+          <span class="route-tag">● Không chờ đợi</span>
+          <span class="route-tag">✦ Đi nhanh – êm</span>
+        </div>
+        <a href="tel:0355146637" class="route-card-btn">ĐẶT XE NGAY</a>
+      </div>
+    </div>
+
+    <div class="route-card reveal">
+      <div class="route-card-img">👥<span class="price-tag">1.1tr</span></div>
+      <div class="route-card-body">
+        <div class="route-card-name">Hà Nội ⇌ Hạ Long (Bao xe 5 chỗ)</div>
+        <div class="route-card-prices">
+          <div>Trọn gói <strong>1.100.000đ</strong></div>
+          <div>Tối đa <strong>4 khách</strong></div>
+        </div>
+        <div class="route-tags">
+          <span class="route-tag">✪ Linh hoạt giờ giấc</span>
+          <span class="route-tag">◉ Xe sạch – mát</span>
+          <span class="route-tag">✧ Lái xe lịch sự</span>
+        </div>
+        <a href="tel:0355146637" class="route-card-btn">ĐẶT XE NGAY</a>
+      </div>
+    </div>
+
+    <div class="route-card reveal">
+      <div class="route-card-img">👨‍👩‍👧‍👦<span class="price-tag">1.2tr</span></div>
+      <div class="route-card-body">
+        <div class="route-card-name">Hà Nội ⇌ Hạ Long (Bao xe 7 chỗ)</div>
+        <div class="route-card-prices">
+          <div>Trọn gói <strong>1.200.000đ</strong></div>
+          <div>Tối đa <strong>6 khách</strong></div>
+        </div>
+        <div class="route-tags">
+          <span class="route-tag">➤ Chạy cao tốc</span>
+          <span class="route-tag">◆ Đón tận nơi</span>
+          <span class="route-tag">✦ Xe đời mới</span>
+        </div>
+        <a href="tel:0355146637" class="route-card-btn">ĐẶT XE NGAY</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY TRUST -->
+<section class="why-section" id="why">
+  <div class="section-head reveal">
+    <h2>Vì Sao Khách Hàng Tin Tưởng HaLong Connect</h2>
+    <p>Hơn cả một chuyến xe — là sự yên tâm suốt hành trình ra biển.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card reveal">
+      <div class="why-icon">📍</div>
+      <h4>Đón tận nơi</h4>
+      <p>Không trung chuyển, tiết kiệm thời gian — xe đến tận địa chỉ bạn.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">🛣️</div>
+      <h4>Chạy cao tốc</h4>
+      <p>Di chuyển nhanh, an toàn trên tuyến cao tốc Hà Nội – Hạ Long.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">💰</div>
+      <h4>Giá niêm yết</h4>
+      <p>450K vé ghép, 1.1tr bao 5 chỗ, 1.2tr bao 7 chỗ — không phụ thu.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">🚐</div>
+      <h4>Xe đời mới</h4>
+      <p>Đội xe sạch đẹp, điều hòa mát, ghế êm suốt hành trình.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking-section" id="booking">
+  <div class="section-head reveal">
+    <h2>Đặt Vé Nhanh</h2>
+    <p>Điền thông tin – chúng tôi gọi lại xác nhận trong 5 phút.</p>
+  </div>
+  <div class="booking-card reveal">
+    <h3>Yêu Cầu Đặt Vé</h3>
+    <p class="sub">Vé ghép 450K/ghế · Bao xe 5 chỗ 1.1tr · Bao xe 7 chỗ 1.2tr</p>
+    <form id="bookingForm" onsubmit="return handleSubmit(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Điểm đón</label>
+          <select required>
+            <option value="">Chọn điểm đón</option>
+            <option>Hà Nội (nội thành)</option>
+            <option>Nội Bài</option>
+            <option>Hạ Long</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Điểm đến</label>
+          <select required>
+            <option value="">Chọn điểm đến</option>
+            <option>Hạ Long</option>
+            <option>Hà Nội (nội thành)</option>
+            <option>Nội Bài</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Ngày khởi hành</label>
+          <input type="date" required/>
+        </div>
+        <div class="form-group">
+          <label>Thời gian</label>
+          <input type="time" required/>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group full">
+          <label>Hình thức</label>
+          <select required>
+            <option value="">Chọn hình thức</option>
+            <option>Vé ghép (450K/ghế)</option>
+            <option>Bao xe 5 chỗ (1.100.000đ)</option>
+            <option>Bao xe 7 chỗ (1.200.000đ)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Họ và tên</label>
+          <input type="text" placeholder="Nguyễn Văn A" required/>
+        </div>
+        <div class="form-group">
+          <label>Số điện thoại</label>
+          <input type="tel" placeholder="09xx xxx xxx" required/>
+        </div>
+      </div>
+      <button type="submit" class="submit-btn">
+        Gửi yêu cầu đặt vé
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <div class="form-note">🔒 Thông tin của bạn được bảo mật tuyệt đối</div>
+    </form>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="section-head reveal">
+    <h2>Khách Hàng Nói Gì</h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Gọi lúc 9h tối mà vẫn xếp được xe, đến đón đúng giờ tận chung cư. Giá đúng như báo, không phát sinh."</p>
+      <div class="testi-author"><div class="testi-avatar a1">TH</div><div><div class="testi-name">Thu Hằng</div><div class="testi-loc">Cầu Giấy, Hà Nội</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Cả nhà 5 người bao nguyên xe, giá 1.1tr rất hợp lý. Tài xế chạy cẩn thận, xe sạch sẽ."</p>
+      <div class="testi-author"><div class="testi-avatar a2">MA</div><div><div class="testi-name">Minh Anh</div><div class="testi-loc">Hoàng Mai, Hà Nội</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Đi ghép 2 vé, ghế êm máy lạnh mát, xe chạy đúng giờ hẹn. Sẽ đặt lại lần sau."</p>
+      <div class="testi-author"><div class="testi-avatar a3">QD</div><div><div class="testi-name">Quang Dũng</div><div class="testi-loc">Đống Đa, Hà Nội</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <h2>Sẵn Sàng Cho Chuyến Đi Ra Biển?</h2>
+  <p>Gọi ngay để được xếp chuyến phù hợp nhất.</p>
+  <a href="tel:0355146637" class="btn-white">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Gọi 035.514.6637
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">HaLong Connect</div>
+  <div class="footer-contact">
+    <span>☎️ 035.514.6637</span>
+    <span>📍 Hà Nội – Hạ Long</span>
+    <span>🕓 04:00 – 22:00 hằng ngày</span>
+  </div>
+  <div class="footer-bottom">© 2026 HaLong Connect. Xe ghép – Bao xe tuyến Hà Nội – Hạ Long.</div>
+</footer>
+
+<!-- FLOATING CALL: round button (desktop) -->
+<div class="float-call">
+  <a href="tel:0355146637" aria-label="Gọi đặt xe">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+</div>
+
+<!-- FLOATING CALL BAR (mobile) -->
+<div class="float-call-bar">
+  <a href="tel:0355146637">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Gọi đặt vé: 035.514.6637
+  </a>
+</div>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', { 'send_to': 'AW-XXXXXXXXX/YYYYYYYYYYYY' });
+  }
+  alert('Cảm ơn bạn! Chúng tôi sẽ gọi lại xác nhận trong 5 phút.\n\nNếu cần gấp, vui lòng gọi trực tiếp: 035.514.6637');
+  document.getElementById('bookingForm').reset();
+  return false;
+}
+
+const reveals = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 60);
+      obs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+reveals.forEach(el => obs.observe(el));
+
+document.addEventListener('DOMContentLoaded', () => {
+  const dateInput = document.querySelector('input[type="date"]');
+  if (dateInput) dateInput.setAttribute('min', new Date().toISOString().split('T')[0]);
+});
+</script>
+
+</body>
+</html>
